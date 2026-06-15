@@ -1,0 +1,46 @@
+name: Update Paper Data
+
+on:
+  schedule:
+    # Run daily at 06:00 UTC
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run paper update pipeline
+        run: python scripts/update_papers.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet data/papers.json; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No paper data changes to commit."
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Paper data has changed."
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/papers.json
+          git commit -m "chore: update paper data"
+          git push
