@@ -2,6 +2,8 @@
 
 **Track, classify, and understand quantum computing progress.**
 
+Live Demo: https://quantum-path-pi.vercel.app/
+
 QuantumPath is an open-source research intelligence platform designed to aggregate, organize, and analyze papers from arXiv across the quantum computing landscape. The platform automatically classifies papers by hardware platform and research theme, generates summaries, and assigns importance scores—helping researchers and students stay current with rapid developments in quantum computing.
 
 ## Motivation
