@@ -1,5 +1,468 @@
 [
   {
+    "id": "2608.19158v1",
+    "title": "Quantum Speedups Require Structure or Depth",
+    "abstract": "One of the most basic conjectures in quantum complexity theory states that every $t$-query quantum algorithm can be simulated on most inputs by a $\\mathrm{poly}(t)$-query classical algorithm. If true, this would provide broad justification for the need for structure in quantum speedups.\n  We settle this conjecture for parallel quantum algorithms, showing that every $t$-query $d$-round quantum algorithm can be simulated on most inputs with $t^{O(d^2)}$ classical queries. This suggests that for unstructured problems, superpolynomial speedups would require quantum circuits of superconstant depth, and exponential speedups would further require polynomial depth. In contrast, most known speedups for structured problems are achieved by highly parallel, low-depth algorithms.\n  Our techniques also carry new implications for the status of $\\mathsf{BPP}$ vs. $\\mathsf{BQP}$ relative to a random oracle, a similarly longstanding problem.",
+    "authors": [
+      "Guy Blanc",
+      "Jordan Docter",
+      "Carmen Strassle",
+      "Li-Yang Tan"
+    ],
+    "publishedDate": "2026-08-19T17:42:10+00:00",
+    "updatedDate": "2026-08-19T17:42:10+00:00",
+    "arxivId": "2608.19158v1",
+    "url": "https://arxiv.org/abs/2608.19158v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.19158v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Quantum Algorithms"
+    ],
+    "summaryShort": "One of the most basic conjectures in quantum complexity theory states that every $t$-query quantum algorithm can be simulated on most inputs by a $\\mathrm{poly}(t)$-query classical algorithm.",
+    "summaryLong": "What it does: One of the most basic conjectures in quantum complexity theory states that every $t$-query quantum algorithm can be simulated on most inputs by a $\\mathrm{poly}(t)$-query classical algorithm.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices.",
+    "importanceScore": 1,
+    "importanceReasons": [
+      "No strong importance signals detected by the rule-based scorer."
+    ]
+  },
+  {
+    "id": "2608.19103v1",
+    "title": "Quantum circuit optimization using deep reinforcement learning: Applications across multiple gate sets",
+    "abstract": "The practical implementation of quantum algorithms on noisy intermediate-scale quantum devices encounters operational limitations due to decoherence and other sources of noise inherent in real hardware. To mitigate these errors while preserving the original functionality of the algorithm, shorter quantum circuits are therefore preferred. This motivates the development of effective quantum circuit optimization algorithms. Learning-based approaches have emerged as a leading candidate, yet existing autonomous agents remain inefficient, spending most of their training capacity rediscovering elementary reductions that deterministic rule-based methods already handle reliably. To address this challenge, we propose a reinforcement learning framework that embeds a deterministic Commutation-and-Reduction (CR) algorithm directly into the training environment. After every agent action, the CR algorithm automatically resolves elementary commutations and cancellations, enabling the agent to focus its learning capacity on the non-trivial optimizations where reinforcement learning adds real value. Empirical evaluation across two gate sets, the universal Clifford+T basis and the CNOT+Pauli basis, shows that RL+CR produces shorter circuits than a standard RL agent at all tested scales. We demonstrate that RL trained on smaller quantum circuits can be applied to larger quantum circuits. On 20-qubit Clifford+T circuits, five times larger than the training circuits, RL+CR removes twice as many gates as standard RL. This work provides a robust approach that could accelerate the compilation and optimization processes for future fault-tolerant and utility-scale quantum systems.",
+    "authors": [
+      "Khoa Dang Tao",
+      "Sumin Jin",
+      "Muhammad Raza",
+      "Changhyoup Lee"
+    ],
+    "publishedDate": "2026-08-19T16:54:17+00:00",
+    "updatedDate": "2026-08-19T16:54:17+00:00",
+    "arxivId": "2608.19103v1",
+    "url": "https://arxiv.org/abs/2608.19103v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.19103v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Fault-Tolerant Quantum Computing",
+      "Quantum Algorithms",
+      "Quantum Compilation"
+    ],
+    "summaryShort": "The practical implementation of quantum algorithms on noisy intermediate-scale quantum devices encounters operational limitations due to decoherence and other sources of noise inherent in real hardware.",
+    "summaryLong": "What it does: The practical implementation of quantum algorithms on noisy intermediate-scale quantum devices encounters operational limitations due to decoherence and other sources of noise inherent in real hardware.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.19094v1",
+    "title": "Realizing Logical Diagonal Gates via Transversal Physical $Z$-Rotations in CSS Codes",
+    "abstract": "Calderbank-Shor-Steane (CSS) codes, constructed from nested classical codes $C_2 \\subseteq C_1$, are typically optimized for good code parameters. However, practical quantum computing equally demands fault-tolerant logical gates. In this work, we characterize nested pairs $(C_1, C_2)$ whose resulting CSS codes realize a target logical diagonal gate via transversal physical $Z$-rotations. In doing so, we recover a result of Camps-Moreno et al. that CSS codes can realize only logical single-qubit $Z$-rotations and multi-qubit controlled-$Z$ rotations via transversal physical $Z$-rotations. Building on our characterization, we develop the ''appending construction'', that takes as input an $[[n',k']]$ CSS code $Q'$ and a target logical $Z$-rotation (single-qubit or multi-controlled) $U_L$, and extends $Q'$ by systematically appending $n''$ physical qubits to obtain an $[[n,k]]$ CSS code $Q$ with $n = n'+n''$ and $k=k'$. The target logical gate $U_L$ is realized in $Q$ by applying a well-chosen physical transversal $Z$-rotation to the $n''$ appended physical qubits. The CSS code $Q$ may incur a loss in minimum distance, but the loss can be controlled through the parameter choices made in the construction. By repeatedly applying the appending construction, we can extend any CSS code $Q'$ to obtain a CSS code $Q$ that supports fault-tolerant implementations of multiple desired logical $Z$-rotations. The cost to be paid for this is the increased physical qubit overhead as the number of target logical gates grows.",
+    "authors": [
+      "K. Sai Mineesh Reddy",
+      "Navin Kashyap"
+    ],
+    "publishedDate": "2026-08-19T16:44:24+00:00",
+    "updatedDate": "2026-08-19T16:44:24+00:00",
+    "arxivId": "2608.19094v1",
+    "url": "https://arxiv.org/abs/2608.19094v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.19094v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Fault-Tolerant Quantum Computing",
+      "Quantum Algorithms"
+    ],
+    "summaryShort": "Calderbank-Shor-Steane (CSS) codes, constructed from nested classical codes $C_2 \\subseteq C_1$, are typically optimized for good code parameters.",
+    "summaryLong": "What it does: Calderbank-Shor-Steane (CSS) codes, constructed from nested classical codes $C_2 \\subseteq C_1$, are typically optimized for good code parameters.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18985v1",
+    "title": "RushHour: A Dynamically Reconfigurable Lattice-Surgery Architecture",
+    "abstract": "Practical fault-tolerant quantum computing (FTQC) requires efficient lattice surgery (LS), so that large algorithms fit on resource-constrained quantum chips. Existing approaches, however, are rigid: qubits, routing space, and resource states are allocated ahead of execution, which prevents running on small chips, leaves statically scheduled executions with large time overheads, and fixes each design at a single area of the space-time trade-off.\n  We present dynamic LS, which enables efficient reconfiguration of the ancilla space, just-in-time allocation of resource states, and dynamic rotations of logical qubits, thereby spanning the entire space-time trade-off with a single, unified approach. We realize dynamic LS with RushHour through a hardware-compiler co-design: the RushHour ISA formalizes and programs our dynamic lattice model, the Lattice Management Unit abstracts dynamic lattice management and performs efficient lattice reconfiguration, and the RushHour Compiler compiles logical circuits for physical chips into optimized ISA programs while pipelining instructions.\n  We evaluate RushHour against six state-of-the-art compilers and two resource models. On the smallest chips, 86% of benchmarks run only with RushHour, while existing approaches require 1.2-3.5$\\times$ larger chips. On space-constrained early-FTQC chips, RushHour runs a median 2.0-7.2$\\times$ faster than the best feasible alternative, while achieving results comparable to the state of the art on very large chips. RushHour's constructive results run 4.8$\\times$ from an idealized-machine resource limit.",
+    "authors": [
+      "Nathaniel Tornow",
+      "Aleksandra Świerkowska",
+      "Peter Wegmann",
+      "Pramod Bhatotia"
+    ],
+    "publishedDate": "2026-08-19T14:51:15+00:00",
+    "updatedDate": "2026-08-19T14:51:15+00:00",
+    "arxivId": "2608.18985v1",
+    "url": "https://arxiv.org/abs/2608.18985v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18985v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Quantum Error Correction",
+      "Fault-Tolerant Quantum Computing",
+      "Quantum Compilation"
+    ],
+    "summaryShort": "Practical fault-tolerant quantum computing (FTQC) requires efficient lattice surgery (LS), so that large algorithms fit on resource-constrained quantum chips.",
+    "summaryLong": "What it does: Practical fault-tolerant quantum computing (FTQC) requires efficient lattice surgery (LS), so that large algorithms fit on resource-constrained quantum chips.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to reliable logical qubits and improved quantum reliability.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18961v1",
+    "title": "Subsystem Symmetries and Fracton Models in Quantum Error Correction",
+    "abstract": "Constructing new quantum codes and understanding their error resilience are central challenges in the development of robust quantum memories. Topological codes are particularly promising due to their favorable error-correcting properties and their connections to phases of matter in many-body physics. In this thesis, we explore the interplay between classical Ising models and quantum error correction through subsystem symmetries, fracton topological order, and Kramers-Wannier-type duality. We study two three-dimensional classical self-dual Ising models with subsystem symmetries, the Tetrahedral Ising model and the Fractal Ising model, investigating their thermal behavior, their relation to fracton phases through subsystem-symmetry gauging, and the properties of the resulting fracton codes. Using a statistical-mechanical mapping, we determine the optimal code-capacity threshold of the Checkerboard code to be $0.107(3)$, which saturates the theoretical limit for CSS codes and represents the highest optimal error threshold among known three-dimensional codes. We relate this saturation to a generalized entropy relation for classical spin models satisfying a Kramers-Wannier-type duality, and argue how this prediction extends to CSS codes with zero encoding rate whose $X$- and $Z$-noise models map to classically dual spin models. These findings establish fracton codes as highly resilient candidates for quantum memories and demonstrate the power of the statistical-mechanical framework, together with its duality predictions, in analyzing and constructing robust quantum error-correcting codes.",
+    "authors": [
+      "Giovanni Canossa"
+    ],
+    "publishedDate": "2026-08-19T14:27:20+00:00",
+    "updatedDate": "2026-08-19T14:27:20+00:00",
+    "arxivId": "2608.18961v1",
+    "url": "https://arxiv.org/abs/2608.18961v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18961v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Quantum Error Correction",
+      "Fault-Tolerant Quantum Computing",
+      "Many-Body Physics"
+    ],
+    "summaryShort": "Constructing new quantum codes and understanding their error resilience are central challenges in the development of robust quantum memories.",
+    "summaryLong": "What it does: Constructing new quantum codes and understanding their error resilience are central challenges in the development of robust quantum memories.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to reliable logical qubits and improved quantum reliability. It is relevant to understanding correlations and collective quantum behavior.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18946v1",
+    "title": "AlphaClifford: Efficient Clifford Synthesis and Transpilation with Model-based RL",
+    "abstract": "Clifford circuits play a foundational role in quantum computing, particularly due to their importance in quantum error correction and fault-tolerant logical synthesis. While these circuits can be efficiently simulated and represented as symplectic matrices, standard synthesis methods-such as the Aaronson-Gottesman algorithm-often yield sub-optimal circuits with excessively high gate counts. In this work, we introduce AlphaClifford, a model-based Reinforcement Learning framework powered by Monte Carlo Tree Search, designed to efficiently synthesize Clifford circuits from the fundamental gate set composed of H, S, and CNOT. By modeling the state space through the algebraic properties of the symplectic group, AlphaClifford effectively explores this combinatorial space to minimize overall circuit cost. For unconstrained Clifford optimization, our approach achieves a consistent reduction in both total and two-qubit (CNOT) gate counts compared to state-of-the-art synthesis heuristics, despite operating with a strictly less expressive gate set. Furthermore, we demonstrate the broad applicability of our framework on two additional tasks: hardware-constrained Clifford transpilation, where we outperform existing RL-based compilers, and as a post-synthesis optimization component within a full Clifford+T logical synthesis pipeline. Our results underscore that model-based RL is highly effective at addressing the combinatorial complexities of quantum compilation, offering a scalable pathway to mitigate hardware constraints in both near-term and future fault-tolerant quantum devices.",
+    "authors": [
+      "Daniele Lizzio Bosco",
+      "Jacopo Cossio",
+      "Carla Piazza",
+      "Giuseppe Serra"
+    ],
+    "publishedDate": "2026-08-19T14:13:26+00:00",
+    "updatedDate": "2026-08-19T14:13:26+00:00",
+    "arxivId": "2608.18946v1",
+    "url": "https://arxiv.org/abs/2608.18946v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18946v1",
+    "source": "arXiv",
+    "platformTags": [
+      "General / Other"
+    ],
+    "themeTags": [
+      "Quantum Error Correction",
+      "Fault-Tolerant Quantum Computing",
+      "Quantum Compilation"
+    ],
+    "summaryShort": "Clifford circuits play a foundational role in quantum computing, particularly due to their importance in quantum error correction and fault-tolerant logical synthesis.",
+    "summaryLong": "What it does: Clifford circuits play a foundational role in quantum computing, particularly due to their importance in quantum error correction and fault-tolerant logical synthesis.\n\nWhy it matters: It is relevant to reliable logical qubits and improved quantum reliability.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18869v1",
+    "title": "Secure Medical Data Transmission Using Quantum Key Distribution and Post-Quantum Cryptography in Real-World Fiber Networks",
+    "abstract": "The threat quantum computers pose to classical public-key cryptography motivates the deployment of quantum-safe communication for critical infrastructure such as healthcare, finance, and energy systems. Quantum key distribution (QKD) and post-quantum cryptography (PQC) offer complementary security guarantees, information-theoretic key exchange and quantum-resistant end-to-end authentication that can be combined in a layered architecture. Here, we demonstrate a field-deployed quantum-secure network integrating entanglement-based QKD with end-to-end PQC over 140 km of installed fiber in Thuringia, Germany, connecting a rural health kiosk to a university hospital via a trusted-node architecture comprising heterogeneous underground and aerial fiber links. Unlike conventional deployments that rely on a dedicated key management system to forward keys to applications, our architecture injects QKD keys directly into standard Linux-based VPN tunnels between adjacent nodes, while PQC secures the communication end-to-end, remaining fully compatible with existing infrastructure and software. Polarization-entangled photon pairs were generated at 810 nm and 1550 nm, with the telecom photon transmitted over deployed fiber. Active polarization stabilization and dispersion compensation preserve the entanglement and enable 22 days of continuous, fully autonomous operation, further underscoring the technological maturity of entanglement-based QKD approaches in a real-world fiber environment. Although the two deployed links were operated during separate rather than concurrent periods, the predominantly aerial link exhibited markedly greater instability, with QBER variations most strongly correlated with wind speed. The generated keys secured a telemedicine proof-of-concept without modifying existing medical systems, demonstrating a practical framework for quantum-safe critical infrastructures.",
+    "authors": [
+      "Vasile-Laurentiu Dosan",
+      "Paul Spooren",
+      "Sebastian Moeckel",
+      "Alessandro Zannotti",
+      "Alek Lagarrigue",
+      "Pablo Vazquez",
+      "Marc Bodenstein",
+      "Jonas Jelonek",
+      "Jansen Dwan",
+      "Fabian Steinlechner",
+      "Kevin Füchsel",
+      "Thomas Hühn",
+      "Oliver de Vries"
+    ],
+    "publishedDate": "2026-08-19T12:46:33+00:00",
+    "updatedDate": "2026-08-19T12:46:33+00:00",
+    "arxivId": "2608.18869v1",
+    "url": "https://arxiv.org/abs/2608.18869v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18869v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions",
+      "Photonic Quantum Computing"
+    ],
+    "themeTags": [
+      "General Theory"
+    ],
+    "summaryShort": "The threat quantum computers pose to classical public-key cryptography motivates the deployment of quantum-safe communication for critical infrastructure such as healthcare, finance, and energy systems.",
+    "summaryLong": "What it does: The threat quantum computers pose to classical public-key cryptography motivates the deployment of quantum-safe communication for critical infrastructure such as healthcare, finance, and energy systems.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. The work is relevant to optical quantum information processing.",
+    "importanceScore": 1,
+    "importanceReasons": [
+      "No strong importance signals detected by the rule-based scorer."
+    ]
+  },
+  {
+    "id": "2608.18861v1",
+    "title": "Predicting critical temperature in quantum simulators for high-$T_c$ superconductivity: the matrix product state plus mean field approach",
+    "abstract": "Quantum simulation based on ultra cold atomic lattice gases is one of the most promising platforms to investigate high-$T_c$ superconductivity beyond the limited capabilities of quantum many body numerics on classical computers. Yet, despite enormous progress since the field's inception, realizing a high-$T_c$ superconducting state still remains out of reach. The present work lays the groundwork to purpose the recently proposed, and already partly realized, mixed-dimensional (mixD) models, towards this end. These systems offer the proven capability to realize very high pairing energies while retaining appreciable mobility of pairs. We specifically investigate the potential of 2D mixD-models with anisotropic tunneling, using the matrix product state plus mean field theory (MPS+MF) for fermions, and show that these models may enter a high-$T_c$ superconducting phase. These simulations in turn are based on a comprehensive characterization of the 1D mixD-systems, which are the sub-units of which the 2D system is comprized. In this, we cover the range of currently experimentally relevant system sizes, and establish practical heuristics to determine when finite\\hyp size effects preclude the use of a 1D mixD-system to build the 2D ones.",
+    "authors": [
+      "Thomas Köhler",
+      "Adrian Kantian"
+    ],
+    "publishedDate": "2026-08-19T12:35:41+00:00",
+    "updatedDate": "2026-08-19T12:35:41+00:00",
+    "arxivId": "2608.18861v1",
+    "url": "https://arxiv.org/abs/2608.18861v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18861v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Superconducting Qubits",
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Quantum Simulation"
+    ],
+    "summaryShort": "Quantum simulation based on ultra cold atomic lattice gases is one of the most promising platforms to investigate high-$T_c$ superconductivity beyond the limited capabilities of quantum many body numerics on classical co...",
+    "summaryLong": "What it does: Quantum simulation based on ultra cold atomic lattice gases is one of the most promising platforms to investigate high-$T_c$ superconductivity beyond the limited capabilities of quantum many body numerics on classical co...\n\nWhy it matters: The work is relevant to circuit-based quantum processors. The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to simulating quantum many-body systems.",
+    "importanceScore": 1,
+    "importanceReasons": [
+      "No strong importance signals detected by the rule-based scorer."
+    ]
+  },
+  {
+    "id": "2608.18598v1",
+    "title": "Know Your Qubits, Know Your Users: Personas for Quantum Software",
+    "abstract": "The advancement of quantum hardware and the intricacies of quantum computing make well-designed quantum software increasingly necessary. Due to the interdisciplinarity of the field, it is crucial to understand the perspectives and specific needs of involved stakeholders, for example, to balance the desired level of abstraction with the exposition of (hardware)-specific details. In this work, we conduct a stakeholder-based analysis to identify personas of quantum software as a means of creating meaningful, user-tailored quantum software. We conducted an expert focus group at a Dagstuhl seminar in 2024 and qualitative interviews with practitioners at conference IEEE QCE in 2025, from which we derive eleven personas of potential users and stakeholders for quantum software. We discuss these personas regarding their use cases, interests, constraints and abstraction level.",
+    "authors": [
+      "Lukas Schmidbauer",
+      "Joshua Ammermann",
+      "Laura Schulz",
+      "Jose Garcia-Alonso",
+      "Robert Wille",
+      "Sebastian Feld",
+      "Ina Schaefer",
+      "Wolfgang Mauerer"
+    ],
+    "publishedDate": "2026-08-19T06:41:12+00:00",
+    "updatedDate": "2026-08-19T06:41:12+00:00",
+    "arxivId": "2608.18598v1",
+    "url": "https://arxiv.org/abs/2608.18598v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18598v1",
+    "source": "arXiv",
+    "platformTags": [
+      "General / Other"
+    ],
+    "themeTags": [
+      "General Theory"
+    ],
+    "summaryShort": "The advancement of quantum hardware and the intricacies of quantum computing make well-designed quantum software increasingly necessary.",
+    "summaryLong": "What it does: The advancement of quantum hardware and the intricacies of quantum computing make well-designed quantum software increasingly necessary.\n\nWhy it matters: The work is relevant to broader quantum computing research and helps contextualize progress in the field.",
+    "importanceScore": 1,
+    "importanceReasons": [
+      "No strong importance signals detected by the rule-based scorer."
+    ]
+  },
+  {
+    "id": "2608.18548v1",
+    "title": "Direct fidelity estimation through joint fiducial grouping",
+    "abstract": "Fault-tolerant quantum computation hinges on the requirement for low physical error rates. Reaching below threshold regime requires the accounting of circuit dependent noise, that is inherent to the execution context in which a quantum gate is usually embedded. Direct fidelity estimation is a technique that offers natural context preservation as it solely requires the insertion of local Pauli preparation and measurement fiducials around the window of interest. However, each sampled input-output Pauli pair demands its own preparation and measurement setting, an overhead that grows rapidly once the target gate is no longer Clifford. We introduce joint fiducial grouping, which partitions Pauli pairs into sets with commuting input and output operators, allowing several Pauli-transfer coefficients to be estimated within the same preparation-measurement setting. We derive an unbiased grouped estimator and finite-sample guarantees showing that grouping always reduces the number of distinct input-output settings and can also reduce the required channel uses when the target weight is concentrated within compatible groups. We characterize these gains for the parametric two-qubit gate $\\mathrm{fSim}(θ,\\varphi)$, and use the grouped estimator as a context-sensitive reward for reinforcement-learning-based gate calibration. Our results provide a practical route to lower-overhead, context-preserving fidelity estimation for continuously parameterized quantum gates.",
+    "authors": [
+      "Júlia Barberà-Rodríguez",
+      "Arthur Strauss"
+    ],
+    "publishedDate": "2026-08-19T05:14:20+00:00",
+    "updatedDate": "2026-08-19T05:14:20+00:00",
+    "arxivId": "2608.18548v1",
+    "url": "https://arxiv.org/abs/2608.18548v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18548v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Fault-Tolerant Quantum Computing",
+      "Quantum Control",
+      "Benchmarking"
+    ],
+    "summaryShort": "Fault-tolerant quantum computation hinges on the requirement for low physical error rates.",
+    "summaryLong": "What it does: Fault-tolerant quantum computation hinges on the requirement for low physical error rates.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18536v1",
+    "title": "Good Stabilizer Codes from Shallow Clifford Circuits with Random Matchings",
+    "abstract": "Encoding quantum information with low circuit overhead is a fundamental challenge in fault-tolerant quantum computation. Random circuits provide a natural mechanism for rapidly spreading logical information through simple gates applied in parallel. Brown and Fawzi showed that random Clifford circuits on two-qubit Clifford gates provide such encoders that achieve the quantum Gilbert-Varshamov rate-distance tradeoff with depth $O(\\log^3 n)$. We show that the same asymptotic tradeoff is attained in optimal $O(\\log n)$ depth under a gate distribution with a more restricted support. For every fixed $δ>0$ and sufficiently large $n$, if $\\frac kn < 1 - H(\\frac{d}{n}) - \\frac{d}{n}\\log_2 3 - δ$, we can construct random circuits of depth $O(\\log n)$ which define, with high probability, an $[n,k]$ stabilizer code of distance at least $d+1$, which matches the $Ω(\\log n)$ light-cone lower bound for linear distance encoders. Our ensemble employs a random matching circuit architecture consisting of $T$ independent permutation-invariant layers. In each layer, the qubits are paired up by a uniformly random perfect matching, and a random independent two-qubit Clifford gate is applied to each pair. The gate distribution need not be uniform over, or even have full support on, the two-qubit Clifford group; rather, we allow for very general distributions on Clifford gates satisfying three regularity conditions. In particular, the construction can be implemented using $n/2$ CNOT gates on randomly matched pairs in each layer, with parallel one-qubit Clifford twirls. These regularity conditions allow us to reduce the second-moment dynamics of our random circuits to a reversible Markov chain on binary support strings. We establish logarithmic hitting-time bounds for this Markov chain and comparisons of its stationary distribution to prove the coding properties of the circuits.",
+    "authors": [
+      "Emile Anand",
+      "Elia Gorokhovsky",
+      "Jennifer Hritz",
+      "Jingtong Sun"
+    ],
+    "publishedDate": "2026-08-19T04:39:23+00:00",
+    "updatedDate": "2026-08-19T04:39:23+00:00",
+    "arxivId": "2608.18536v1",
+    "url": "https://arxiv.org/abs/2608.18536v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18536v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Quantum Error Correction",
+      "Fault-Tolerant Quantum Computing"
+    ],
+    "summaryShort": "Encoding quantum information with low circuit overhead is a fundamental challenge in fault-tolerant quantum computation.",
+    "summaryLong": "What it does: Encoding quantum information with low circuit overhead is a fundamental challenge in fault-tolerant quantum computation.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to reliable logical qubits and improved quantum reliability.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18512v1",
+    "title": "Integer Linear Programming Decoder for Abelian and Non-Abelian Topological Codes",
+    "abstract": "Topological orders (TOs) are widely used as quantum error-correcting codes, with anyon excitations serving as error syndromes. For certain Abelian TOs, decoding can be performed by independently matching particle-antiparticle pairs of each species. However, matching-based decoders cannot handle more general fusion rules in either Abelian or non-Abelian TOs, nor account for noise that correlates different anyon species. While clustering decoders are more broadly applicable, they typically neglect anyon data and fusion properties, leading to poor performance in practice. In this work, we introduce a fundamentally different decoder for arbitrary TOs based on integer linear programming (ILP). The ILP formulation linearizes the error-correction problem through the introduction of auxiliary variables and encodes fusion rules as linear constraints. Classical optimization then identifies the minimum-weight error configuration. As concrete examples, we determine error-correction thresholds for three TOs: the Abelian $\\mathbb{Z}_2$ TO under depolarizing noise, where charge and flux errors are correlated; the Abelian $\\mathbb{Z}_3$ TO, which does not admit a pairwise matching decoder; and the non-Abelian $D_4$ TO under noise channels that generate all anyon species. We demonstrate the versatility of the ILP decoder by showing a clear performance advantage over most existing decoders in all three cases. We further extend the method to incorporate noisy syndrome measurements and propose a just-in-time variant for continuous error correction. Our results establish ILP as a natural framework for handling correlated errors and general anyon fusion rules, and as a powerful and flexible general-purpose decoder for incoherent anyon noise in arbitrary TOs, with applications to fault-tolerant quantum computation.",
+    "authors": [
+      "Dian Jing",
+      "Aubrey Zhang",
+      "Liang Jiang",
+      "Ruben Verresen"
+    ],
+    "publishedDate": "2026-08-19T04:00:58+00:00",
+    "updatedDate": "2026-08-19T04:00:58+00:00",
+    "arxivId": "2608.18512v1",
+    "url": "https://arxiv.org/abs/2608.18512v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18512v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions",
+      "Topological Quantum Computing"
+    ],
+    "themeTags": [
+      "Quantum Error Correction",
+      "Fault-Tolerant Quantum Computing"
+    ],
+    "summaryShort": "Topological orders (TOs) are widely used as quantum error-correcting codes, with anyon excitations serving as error syndromes.",
+    "summaryLong": "What it does: Topological orders (TOs) are widely used as quantum error-correcting codes, with anyon excitations serving as error syndromes.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. The work is relevant to fault-tolerant approaches based on topology. It is relevant to reliable logical qubits and improved quantum reliability.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18440v1",
+    "title": "Asymptotic Entanglement Hiding under Stabilizer Restrictions",
+    "abstract": "Entanglement is central to quantum information processing, while stabilizer operations underpin fault-tolerant quantum computation. We ask how much entanglement remains visible or distillable under stabilizer restrictions. We quantify stabilizer-visible entanglement by restricting the measured relative entropy of entanglement to stabilizer measurements, thereby obtaining converse bounds on entanglement distillation under stabilizer operations. We demonstrate magic-free asymptotic entanglement hiding: we construct explicit convex mixtures of pure stabilizer states on $N$ qutrits per party whose unrestricted visible entanglement and LOCC-distillable entanglement both grow as $Ω(N/\\log N)$, while their stabilizer-visible and stabilizer-distillable entanglement vanish as $N\\to\\infty$. Thus, an unbounded amount of LOCC-distillable entanglement carried by stabilizer states can become asymptotically invisible and undistillable under stabilizer restrictions. We further prove that stabilizer-visible entanglement is $O(1)$ with high probability for Haar-random pure states despite extensive unrestricted visibility, and vanishes uniformly over entangled Werner states as the local dimension grows through odd primes. These results reveal a fundamental separation between entanglement and magic as resources, exposing intrinsic limits on entanglement extraction using stabilizer operations.",
+    "authors": [
+      "Jicun Li",
+      "Wei Xie",
+      "Jun Wu",
+      "Honglin Chen",
+      "Xiang-Yang Li"
+    ],
+    "publishedDate": "2026-08-19T02:11:51+00:00",
+    "updatedDate": "2026-08-19T02:11:51+00:00",
+    "arxivId": "2608.18440v1",
+    "url": "https://arxiv.org/abs/2608.18440v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18440v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Fault-Tolerant Quantum Computing"
+    ],
+    "summaryShort": "Entanglement is central to quantum information processing, while stabilizer operations underpin fault-tolerant quantum computation.",
+    "summaryLong": "What it does: Entanglement is central to quantum information processing, while stabilizer operations underpin fault-tolerant quantum computation.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
+    "importanceScore": 3,
+    "importanceReasons": [
+      "Related to quantum error correction or fault-tolerant quantum computing.",
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
+    "id": "2608.18363v1",
+    "title": "Variational Quantum Algorithms for Hyperelasticity: Incorporating Nonlinear Constitutive Behavior",
+    "abstract": "This paper extends a recently proposed Variational Quantum Algorithm framework for nonlinear elasticity to a broader class of constitutive nonlinearities involving rational powers of the stretch. One-dimensional incompressible Ogden and Mooney-Rivlin models are employed as representative examples to demonstrate the proposed methodology. Nonlinear constitutive terms are transformed into forms compatible with the available quantum algorithmic primitives through the introduction of auxiliary variables and penalty constraints, yielding approximate solutions via a Variational Quantum Algorithm. An iterative correction strategy based on a sequence of Variational Quantum Algorithms is then introduced to improve solution accuracy. A Numerical example demonstrates the proposed approach.",
+    "authors": [
+      "Uditnarayan Kouskiya",
+      "Caglar Oskay"
+    ],
+    "publishedDate": "2026-08-18T22:28:50+00:00",
+    "updatedDate": "2026-08-18T22:28:50+00:00",
+    "arxivId": "2608.18363v1",
+    "url": "https://arxiv.org/abs/2608.18363v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18363v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Quantum Algorithms"
+    ],
+    "summaryShort": "This paper extends a recently proposed Variational Quantum Algorithm framework for nonlinear elasticity to a broader class of constitutive nonlinearities involving rational powers of the stretch.",
+    "summaryLong": "What it does: This paper extends a recently proposed Variational Quantum Algorithm framework for nonlinear elasticity to a broader class of constitutive nonlinearities involving rational powers of the stretch.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices.",
+    "importanceScore": 1,
+    "importanceReasons": [
+      "No strong importance signals detected by the rule-based scorer."
+    ]
+  },
+  {
+    "id": "2608.18206v1",
+    "title": "Teaching Quantum Design Automation with Block-Based Programming",
+    "abstract": "As quantum circuits grow beyond small toy examples, preparing them for execution on physical devices becomes increasingly complex. Design automation is therefore essential for scalable quantum computing: Compilation procedures optimize resource requirements and transform circuits to a format compatible with specific hardware; resource estimation evaluates execution cost; verification methods prove circuit correctness. However, these concepts present a steep learning curve for novices, particularly when quantum circuits are introduced through low-level textual representations. To address this, we present a block-based programming framework for quantum design automation, implemented as an extension to the Scratch programming platform. This system allows users to build quantum circuits as a sequence of blocks and embed them in classical control logic to perform evaluations, compare simulation results, and directly apply different design automation techniques. We evaluated the approach in a user study with computer science students, who completed guided exercises using the platform and provided structured feedback in the form of self-reports and short knowledge assessments. Results demonstrate strong understanding and confidence in quantum design automation concepts, suggesting that the block-based approach successfully lowers the entry barrier to quantum design automation. The implemented framework is open-source and available at https://github.com/munich-quantum-toolkit/scratch-quantum.",
+    "authors": [
+      "Damian Rovara",
+      "Robert Wille"
+    ],
+    "publishedDate": "2026-08-18T18:00:02+00:00",
+    "updatedDate": "2026-08-18T18:00:02+00:00",
+    "arxivId": "2608.18206v1",
+    "url": "https://arxiv.org/abs/2608.18206v1",
+    "pdfUrl": "https://arxiv.org/pdf/2608.18206v1",
+    "source": "arXiv",
+    "platformTags": [
+      "Trapped Ions"
+    ],
+    "themeTags": [
+      "Quantum Algorithms",
+      "Quantum Compilation",
+      "Benchmarking"
+    ],
+    "summaryShort": "As quantum circuits grow beyond small toy examples, preparing them for execution on physical devices becomes increasingly complex.",
+    "summaryLong": "What it does: As quantum circuits grow beyond small toy examples, preparing them for execution on physical devices becomes increasingly complex.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices.",
+    "importanceScore": 2,
+    "importanceReasons": [
+      "Mentions logical qubits, surface codes, or fault tolerance."
+    ]
+  },
+  {
     "id": "2608.18071v1",
     "title": "Ultrafast and high resolution spatial light modulation for cold atoms",
     "abstract": "Programmable arrays of ultracold atoms are a leading platform for quantum computation and simulation, enabling state-of-the-art implementations of quantum error correction, and analog simulations of Hubbard models that address open problems in condensed matter physics. In these systems, all local control is mediated through precisely shaped optical fields, and so the challenge of managing many-body quantum states becomes an exercise in optical design. In particular, one wishes for fast, flexible control with low disorder and heating, and access to large arrays with many atoms. An ideal optical system therefore must generate arbitrary patterns with high spatial resolution and low disorder, and alter these patterns on a timescale that is faster than the relevant atomic dynamics. Here, we present an optical system that is comparable to previous approaches in scale, while advancing all other axes. We demonstrate arbitrary pattern generation with $10^{-3}$ intensity resolution, a frame rate of $>84$ MFPS (megaframes per second), and a spatial resolution of $83 \\times 52$ beam waists (with $11 \\times 52$ waists accessible via a single $40$ GHz electro-optic modulator). These capabilities unlock a new class of experiments. We develop and numerically validate a scheme for fully programmable Hubbard models, with time-dependent control over local chemical potentials, tunneling amplitudes, on-site interactions, and patterns of artificial magnetic flux. The same architecture performs fast, arbitrary permutations of tweezers in 2D, decoupling optical constraints from the design of high-rate error-correcting codes.",
@@ -418,18 +881,18 @@
     ]
   },
   {
-    "id": "2608.17109v1",
+    "id": "2608.17109v2",
     "title": "Hardness of approximation for minimum-weight decoding of two-dimensional topological quantum codes",
-    "abstract": "Efficient decoding is essential for the practical realization of fault-tolerant quantum computers. We study the computational complexity of minimum-weight decoding for topological quantum codes. For surface codes under the depolarizing channel, we consider Minimum-Weight decoding, which seeks a minimum-weight Pauli error consistent with both the $X$- and $Z$-syndromes. For color codes under independent $X$- and $Z$-error models, we consider Separate Minimum-Weight decoding.\n  Assuming $P\\neq NP$, we establish polynomial additive inapproximability gaps for these problems. Specifically, for the toric code and the $4.8.8$ color code on the torus, no polynomial-time algorithm can always produce a solution whose weight is within $Ω(N^{1/14})$ of the optimum, where $N$ is the number of qubits. For the planar surface code, we obtain an $Ω(N^{1/18})$ gap. Our inapproximability results use Håstad's hardness of approximation for MAX-3SAT.\n  Our reduction develops a general, modular framework for embedding logical constraints into coupled primal--dual join problems on a lattice. A key ingredient is a localization argument that controls unintended interactions between different parts of the construction.",
+    "abstract": "Efficient decoding is essential for the practical realization of fault-tolerant quantum computers. We study the computational complexity of minimum-weight decoding for topological quantum codes. For surface codes under the depolarizing channel, we consider Minimum-Weight decoding, which seeks a minimum-weight Pauli error consistent with both the $X$- and $Z$-syndromes. For color codes under independent $X$- and $Z$-error models, we consider Separate Minimum-Weight decoding.\n  Assuming $P\\neq NP$, we establish polynomial additive inapproximability gaps for these problems. Specifically, for the toric code and the $4.8.8$ color code on the torus, there exists a constant $c>0$ such that no polynomial-time algorithm can always produce a solution whose weight is within $cN^{1/14}$ of the optimum, where $N$ is the number of qubits, unless $P=NP$. For the planar surface code, we obtain an $Ω(N^{1/18})$ gap. Our inapproximability results use Håstad's hardness of approximation for MAX-3SAT.\n  Our reduction develops a general, modular framework for embedding logical constraints into coupled primal--dual join problems on a lattice. A key ingredient is a localization argument that controls unintended interactions between different parts of the construction.",
     "authors": [
       "Louay Bazzi",
       "Georges Khater"
     ],
     "publishedDate": "2026-08-17T20:37:08+00:00",
-    "updatedDate": "2026-08-17T20:37:08+00:00",
-    "arxivId": "2608.17109v1",
-    "url": "https://arxiv.org/abs/2608.17109v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.17109v1",
+    "updatedDate": "2026-08-19T04:58:43+00:00",
+    "arxivId": "2608.17109v2",
+    "url": "https://arxiv.org/abs/2608.17109v2",
+    "pdfUrl": "https://arxiv.org/pdf/2608.17109v2",
     "source": "arXiv",
     "platformTags": [
       "Trapped Ions"
@@ -2418,7 +2881,7 @@
     ]
   },
   {
-    "id": "2608.12711v1",
+    "id": "2608.12711v2",
     "title": "SPLIT-Q: A Scalable Sequential Quantum Computing Framework for Coherent Controlled Islanding",
     "abstract": "Growing integration of distributed energy resources increases power-system variability and uncertainty. During disturbances, these effects can intensify generation-load imbalances and cascading failures. Controlled islanding limits their propagation by partitioning a compromised grid into connected, electrically sustainable islands. However, classical methods face rapidly growing computational costs as network size and island count increase. Quantum optimization offers an alternative for exploring this combinatorial partition space. Yet monolithic quantum formulations encode all assignment decisions in one circuit, causing qubit demand and circuit complexity to scale with network size. In this study, a qubit-bounded sequential distributed quantum approximate optimization algorithm (QAOA) framework is proposed to tackle coherent controlled islanding under limited quantum resources. It formulates the optimization as boundary-conditioned regional quadratic unconstrained binary optimization (QUBO) subproblems that are solved sequentially within a fixed qubit budget. Thus, circuit width remains independent of network size, with aggregate quantum workload scaling linearly on bounded-degree networks. Evaluation covers eleven IEEE systems from 9 to 300 buses using IBM quantum computing resources, with Gurobi and monolithic QAOA as references. Across all systems, the framework recovers feasible Gurobi-optimal partitions under noise, confirming the resilience of its solution quality. The results further show that the proposed method substantially reduces quantum-resource demand and circuit complexity relative to monolithic QAOA, allowing large islanding problems to be addressed within current hardware limits. The proposed framework provides a feasible and scalable pathway for quantum optimization in large-scale power systems.",
     "authors": [
@@ -2429,10 +2892,10 @@
       "Ganesh Kumar Venayagamoorthy"
     ],
     "publishedDate": "2026-08-13T01:47:54+00:00",
-    "updatedDate": "2026-08-13T01:47:54+00:00",
-    "arxivId": "2608.12711v1",
-    "url": "https://arxiv.org/abs/2608.12711v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.12711v1",
+    "updatedDate": "2026-08-19T15:02:34+00:00",
+    "arxivId": "2608.12711v2",
+    "url": "https://arxiv.org/abs/2608.12711v2",
+    "pdfUrl": "https://arxiv.org/pdf/2608.12711v2",
     "source": "arXiv",
     "platformTags": [
       "Trapped Ions"
@@ -2652,457 +3115,6 @@
     ],
     "summaryShort": "The convergence of AI and quantum computing requires a new approach to cybersecurity.",
     "summaryLong": "What it does: The convergence of AI and quantum computing requires a new approach to cybersecurity.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
-    "importanceScore": 1,
-    "importanceReasons": [
-      "No strong importance signals detected by the rule-based scorer."
-    ]
-  },
-  {
-    "id": "2608.12021v1",
-    "title": "Efficient Assembly of a Defect-Free Quantum Register of 1024 Neutral-Atom Qubits",
-    "abstract": "Low-entropy arrays of atomic quantum systems in optical tweezers offer unique prospects for fundamental research on few- and many-body systems as well as for extended applications in quantum technology. The significance of this approach relies on the achievable system size, its uniformity, and the rate of qubit allocation. We propel the neutral-atom quantum-technology platform by the rapid assembly of a regular two-dimensional quantum register of up to 1024 atomic qubits, enabled by a novel implementation of intensity-homogenized tweezer arrays and parallelized atom transport. Our highly efficient microoptical architecture modularizes intensity equalization and tweezer patterning in separate functional units, eliminating restrictions that arise for high-power, high-resolution, and large-scale light-field control within a single device. Arrays of precise grid structure, trap depth, and vibrational frequency with more than 3500 sites are demonstrated. Individual sites are interconnected by up to 50 parallelized transport tweezers with intensity and position control in real-time for swift qubit relocation. Multi-tweezer transport enables the operation of target patterns of up to 32 x 32 sites with sustained near-unity filling fraction. These results boost neutral-atom quantum information science above the kiloqubit level.",
-    "authors": [
-      "Lukas Sturm",
-      "Marcel Mittenbuehler",
-      "Tim Gollerthan",
-      "Malte Schlosser",
-      "Gerhard Birkl"
-    ],
-    "publishedDate": "2026-08-12T12:57:57+00:00",
-    "updatedDate": "2026-08-12T12:57:57+00:00",
-    "arxivId": "2608.12021v1",
-    "url": "https://arxiv.org/abs/2608.12021v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.12021v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions",
-      "Neutral Atoms / Rydberg"
-    ],
-    "themeTags": [
-      "Many-Body Physics"
-    ],
-    "summaryShort": "Low-entropy arrays of atomic quantum systems in optical tweezers offer unique prospects for fundamental research on few- and many-body systems as well as for extended applications in quantum technology.",
-    "summaryLong": "What it does: Low-entropy arrays of atomic quantum systems in optical tweezers offer unique prospects for fundamental research on few- and many-body systems as well as for extended applications in quantum technology.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. The work is relevant to atom-array quantum computing and quantum simulation. It is relevant to understanding correlations and collective quantum behavior.",
-    "importanceScore": 2,
-    "importanceReasons": [
-      "Addresses scaling or large-scale quantum computing architecture."
-    ]
-  },
-  {
-    "id": "2608.11811v1",
-    "title": "Continuous-variable state moments from randomized homodyne and heterodyne measurements",
-    "abstract": "Continuous-variable (CV) quantum states are naturally characterized by their moments, defined as expectation values of products of single- or multimode ladder operators. Many CV Hamiltonians and quantum algorithms are formulated directly in terms of these moments, and therefore an efficient procedure to estimate moments with limited state measurements is necessary. In this paper, we present a protocol for shadow tomography of moment-generating functions (MGFs) of CV states based on randomized homodyne and heterodyne measurements. The resulting shadows enable an efficient and concurrent estimation of many multimode moments. Our complexity analysis shows that the number of measurements required to estimate a certain moment to a given precision grows exponentially in the order of the moments. Finally, we assess the precision of these moment estimators by applying them to two tasks: detecting entanglement in both Gaussian and non-Gaussian states via the Shchukin-Vogel protocol, and characterizing optical loss in a photonic chip. We demonstrate that both tasks can be accomplished with only a few thousand randomized measurements. The small number of required measurements, combined with efficient sample processing, makes our protocol applicable to a wide range of CV simulation tasks.",
-    "authors": [
-      "Michael Tsesmelis",
-      "Moritz Straeter",
-      "Leong-Chuan Kwek"
-    ],
-    "publishedDate": "2026-08-12T08:53:46+00:00",
-    "updatedDate": "2026-08-12T08:53:46+00:00",
-    "arxivId": "2608.11811v1",
-    "url": "https://arxiv.org/abs/2608.11811v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11811v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions",
-      "Photonic Quantum Computing"
-    ],
-    "themeTags": [
-      "Quantum Algorithms"
-    ],
-    "summaryShort": "Continuous-variable (CV) quantum states are naturally characterized by their moments, defined as expectation values of products of single- or multimode ladder operators.",
-    "summaryLong": "What it does: Continuous-variable (CV) quantum states are naturally characterized by their moments, defined as expectation values of products of single- or multimode ladder operators.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. The work is relevant to optical quantum information processing. It is relevant to computational applications of quantum devices.",
-    "importanceScore": 2,
-    "importanceReasons": [
-      "Describes an experimental platform or processor."
-    ]
-  },
-  {
-    "id": "2608.11733v2",
-    "title": "A 12-CNOT Double Qubit Excitation Gate",
-    "abstract": "In this work, we presented, to the best of our knowledge, the first reported 12-CNOT decomposition of the double qubit excitation operator. We compared our new circuit with the previous SOTA 13-CNOT circuits in 4 different metrics. Our new circuit has the lowest CNOT count (12), lowest CNOT depth (8, roughly 27% reduction), and lowest total circuit depth (15, 25% reduction) among all the previous SOTA circuits. Further, we only added 2 extra one-qubit gates compared to the lowest one-qubit gate count (11) among the previous SOTA circuits. As the double qubit excitation operator can be used as a building block hundreds or thousands of times in practical quantum algorithms, any reduction in such primitives compounds over the full circuit, resulting in significant overall resource savings.",
-    "authors": [
-      "Irfansha Shaik"
-    ],
-    "publishedDate": "2026-08-12T07:12:57+00:00",
-    "updatedDate": "2026-08-18T16:41:31+00:00",
-    "arxivId": "2608.11733v2",
-    "url": "https://arxiv.org/abs/2608.11733v2",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11733v2",
-    "source": "arXiv",
-    "platformTags": [
-      "General / Other"
-    ],
-    "themeTags": [
-      "Quantum Algorithms"
-    ],
-    "summaryShort": "In this work, we presented, to the best of our knowledge, the first reported 12-CNOT decomposition of the double qubit excitation operator.",
-    "summaryLong": "What it does: In this work, we presented, to the best of our knowledge, the first reported 12-CNOT decomposition of the double qubit excitation operator.\n\nWhy it matters: It is relevant to computational applications of quantum devices.",
-    "importanceScore": 1,
-    "importanceReasons": [
-      "No strong importance signals detected by the rule-based scorer."
-    ]
-  },
-  {
-    "id": "2608.11719v1",
-    "title": "Do Not Let CNOTs Overwhelm the Decoder: Scheduling Transversal Gates for Fast FTQC",
-    "abstract": "Transversal CNOT (TCNOT) gates can accelerate fault-tolerant quantum computation (FTQC) in the surface code by reducing the number of syndrome extraction rounds required between logical operations from $O(d)$ to $O(1)$. This is particularly attractive for quantum platforms with long-range connectivity, such as neutral atoms. However, dense TCNOT schedules substantially increase the classical decoding workload. TCNOTs propagate errors across multiple surface-code patches, enlarging the spatiotemporal region that must be decoded jointly. Consequently, denser TCNOT schedules increase decoding latency and memory requirements and potentially exceed available decoder capacity. Moreover, because the detector error model (DEM) of each decoding window depends on the TCNOT schedule, exhaustively precomputing all possible window-level DEMs is infeasible, requiring just-in-time (JIT) DEM compilation. Thus, the practical benefit of TCNOT gates is limited not only by quantum hardware performance but also by classical decoding and DEM-compilation capacity.\n  We introduce PACE, a decoder-aware scheduling framework for TCNOT-based FTQC. PACE first mitigates the decoder-side costs of aggressive TCNOT scheduling through three complementary techniques. Hybrid Window Decoding assigns different decoders for each decoding window according to its DEM structure. DEM Stitch generates schedule-specific window-level DEMs just in time by assembling reusable precompiled fragments. Sub-window Parallel Decoding decomposes large windows into smaller sub-windows with graph-coloring formulation. Building on these techniques, PACE then performs decoder-aware scheduling to maximize TCNOT concurrency within the available decoder resources. Our evaluation shows the trade-off between quantum acceleration and classical decoding cost, revealing the limitations of current decoding systems for TCNOT-based FTQC.",
-    "authors": [
-      "Shota Ikari",
-      "Yuga Hirai",
-      "Yasunari Suzuki",
-      "Hiroshi Nakamura",
-      "Yosuke Ueno"
-    ],
-    "publishedDate": "2026-08-12T06:58:59+00:00",
-    "updatedDate": "2026-08-12T06:58:59+00:00",
-    "arxivId": "2608.11719v1",
-    "url": "https://arxiv.org/abs/2608.11719v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11719v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions",
-      "Neutral Atoms / Rydberg"
-    ],
-    "themeTags": [
-      "Quantum Error Correction",
-      "Fault-Tolerant Quantum Computing",
-      "Quantum Compilation"
-    ],
-    "summaryShort": "Transversal CNOT (TCNOT) gates can accelerate fault-tolerant quantum computation (FTQC) in the surface code by reducing the number of syndrome extraction rounds required between logical operations from $O(d)$ to $O(1)$.",
-    "summaryLong": "What it does: Transversal CNOT (TCNOT) gates can accelerate fault-tolerant quantum computation (FTQC) in the surface code by reducing the number of syndrome extraction rounds required between logical operations from $O(d)$ to $O(1)$.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. The work is relevant to atom-array quantum computing and quantum simulation. It is relevant to reliable logical qubits and improved quantum reliability.",
-    "importanceScore": 3,
-    "importanceReasons": [
-      "Related to quantum error correction or fault-tolerant quantum computing.",
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11648v1",
-    "title": "A Quantum/Classical Example Oracle Separation for Making Things Up",
-    "abstract": "We study the power of quantum examples, as compared to classical examples, in the PAC learning framework. Here, we have two learning algorithms, both with access to quantum computation, but one gets quantum examples, whereas the other gets classical examples. It was previously unknown whether there were learning tasks that can be efficiently performed but not by the latter. Our primary result is to show that relative to an oracle, there are distributions that can be efficiently generated by a quantum learner with access to quantum examples, but not by a quantum learner with access to only classical examples, making progress to answering this question in the affirmative.",
-    "authors": [
-      "Kenny Chen"
-    ],
-    "publishedDate": "2026-08-12T04:45:24+00:00",
-    "updatedDate": "2026-08-12T04:45:24+00:00",
-    "arxivId": "2608.11648v1",
-    "url": "https://arxiv.org/abs/2608.11648v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11648v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "General Theory"
-    ],
-    "summaryShort": "We study the power of quantum examples, as compared to classical examples, in the PAC learning framework.",
-    "summaryLong": "What it does: We study the power of quantum examples, as compared to classical examples, in the PAC learning framework.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
-    "importanceScore": 1,
-    "importanceReasons": [
-      "No strong importance signals detected by the rule-based scorer."
-    ]
-  },
-  {
-    "id": "2608.11647v1",
-    "title": "The Dirac Information Carrier for Relativistic Quantum Computation",
-    "abstract": "Quantum computation has traditionally been formulated by postulating abstract information carriers and subsequently identifying physical systems that realize them. We adopt the opposite viewpoint and ask what computational structure is supplied by a fundamental relativistic quantum system itself. Focusing on the simplest nontrivial massive spin carrier, spin-1/2, we show that its relativistic description supplies a native four-dimensional information carrier through the Dirac equation. The resulting Dirac information carrier possesses an intrinsic positive- and negative-energy decomposition that induces a physics-constrained computational structure comprising sector-preserving and sector-coupling quantum logic. Restricting the relativistic computational structure to the positive-energy sector and taking the nonrelativistic regime recovers the familiar Pauli qubit description. We distinguish mathematical unitary transformations from physically admissible gates and show how charge-conjugation structure, charge superselection, and associated reference-frame resources can constrain quantum logic beyond the sector-preserving structure. Finally, under appropriate physical assumptions, we establish the conditions under which this structure supports full single-carrier controllability. Our work establishes the Dirac information carrier as the massive spin-1/2 instance of a broader programme in which computational structures are derived from the relativistic representation carried by the underlying physical system.",
-    "authors": [
-      "Barry C Sanders"
-    ],
-    "publishedDate": "2026-08-12T04:45:20+00:00",
-    "updatedDate": "2026-08-12T04:45:20+00:00",
-    "arxivId": "2608.11647v1",
-    "url": "https://arxiv.org/abs/2608.11647v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11647v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "General Theory"
-    ],
-    "summaryShort": "Quantum computation has traditionally been formulated by postulating abstract information carriers and subsequently identifying physical systems that realize them.",
-    "summaryLong": "What it does: Quantum computation has traditionally been formulated by postulating abstract information carriers and subsequently identifying physical systems that realize them.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
-    "importanceScore": 1,
-    "importanceReasons": [
-      "No strong importance signals detected by the rule-based scorer."
-    ]
-  },
-  {
-    "id": "2608.11630v2",
-    "title": "Full-Stack High-Volume Quantum Networking Architecture based on Photonic-Integrated Tin Vacancy Centers in Diamond",
-    "abstract": "Solid state quantum emitters are a leading platform for photonic quantum networking with memory nodes. However, the inhomogeneous distribution of quantum emitters, as well as several environmental factors (i.e. strain and electric fields) spread the frequency spectrum of the qubits, making them distinguishable and therefore not a reliable resource for distributed quantum entanglement. In this paper, we demonstrate a full-stack approach to integrating nearly indistinguishable tin vacancy (SnV$^-$) quantum emitters on a frequency-tunable photonic interposer that overcomes the native distribution and static variation of quantum emitters for an indistinguishable photonic quantum networking platform. We demonstrate a silicon nitride-on-insulator photonic integrated circuit (PIC) with accompanying multiphysics digital twin (MPhDT) that guides discovery of SnV$^-$ strain-tuning parameters and informs construction of a multi-channel quantum repeater node. On this node, we achieve the first simultaneous demonstration of spectral tuning of the zero phonon line (ZPL) at GHz scale; coherent electron spin control with gate times of $<80$ ns; strongly- and weakly-coupled nuclear spin detection; and commercial fiber array-coupled readout of a SnV$^-$ center. Finally, we propose and simulate improvements to the architecture that achieve 99.96% connectivity of $ N \\sim 1000$ emitters spanning the inhomogeneous distribution of SnV$^-$ centers in strained diamond, where distributed quantum entanglement may be realized.",
-    "authors": [
-      "Hamza Raniwala",
-      "Ian Christen",
-      "Helaman Flores",
-      "David Starling",
-      "Ryan Murphy",
-      "Eric Bersin",
-      "Kevin Chen",
-      "Marc Davis",
-      "Maxim Sirotin",
-      "Mahmoud Jalali Mehrabad",
-      "Ethan G. Arnault",
-      "Matthew E. Trusheim",
-      "P. B. Dixon",
-      "Dirk R. Englund"
-    ],
-    "publishedDate": "2026-08-12T04:26:50+00:00",
-    "updatedDate": "2026-08-17T17:14:36+00:00",
-    "arxivId": "2608.11630v2",
-    "url": "https://arxiv.org/abs/2608.11630v2",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11630v2",
-    "source": "arXiv",
-    "platformTags": [
-      "Photonic Quantum Computing",
-      "Semiconductor Spin Qubits"
-    ],
-    "themeTags": [
-      "Quantum Communication"
-    ],
-    "summaryShort": "Solid state quantum emitters are a leading platform for photonic quantum networking with memory nodes.",
-    "summaryLong": "What it does: Solid state quantum emitters are a leading platform for photonic quantum networking with memory nodes.\n\nWhy it matters: The work is relevant to optical quantum information processing. The work is relevant to scalable solid-state qubit platforms.",
-    "importanceScore": 2,
-    "importanceReasons": [
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11579v1",
-    "title": "Efficient Compilation for Hamiltonian Simulation via Global Binary Symplectic Form Simplification",
-    "abstract": "Hamiltonian simulation is a core quantum workload, underpinning variational quantum algorithms and Trotterized time evolution. Such programs are expressed as Pauli exponential sequences, exhibiting structural patterns that are highly amenable to high-level synthesis and optimization. Existing compilers, however, fail to fully unlock the optimization potential of their global algebraic structure, even when employing advanced graph- or tableau-based methods.\n  We present Symphony, a holistic compilation approach built on the binary symplectic form (BSF) representation of Pauli strings. Unlike prior group-wise BSF simplification and path-based Pauli network synthesis, Symphony applies generalized controlled-Pauli Clifford transformations directly to a global BSF tableau, adaptively reducing active Pauli rows and emitting eligible two-qubit blocks other than single-qubit rotations in a forward Clifford frame. Following algebraic simplification, Symphony performs a causality-preserving block rescheduling heuristic that respects frame-induced dependencies while exposing extensive two-qubit block parallelism opportunities. This streamlined compilation style comprehensively exploits simultaneous simplification and commutativity opportunities, achieving efficient global optimization without relying on computationally expensive heuristics or long-horizon searches. Across the generic Hamiltonian simulation benchmarks in HamLib, Symphony achieves average reductions of 59% in two-qubit gate count and 91% in circuit depth. It strictly Pareto-dominates prior state-of-the-art compilers, requiring 1.14--1.58$\\times$ fewer two-qubit gates and especially shrinking two-qubit circuit depth by a substantial factor of 1.87--5.67$\\times$ on average.",
-    "authors": [
-      "Zhaohui Yang",
-      "Yuwei Han",
-      "Ruiyun Zhang",
-      "Dawei Ding",
-      "Jianxin Chen",
-      "Yuan Feng",
-      "Yuan Xie"
-    ],
-    "publishedDate": "2026-08-12T02:38:42+00:00",
-    "updatedDate": "2026-08-12T02:38:42+00:00",
-    "arxivId": "2608.11579v1",
-    "url": "https://arxiv.org/abs/2608.11579v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11579v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "Quantum Algorithms",
-      "Quantum Simulation",
-      "Quantum Compilation"
-    ],
-    "summaryShort": "Hamiltonian simulation is a core quantum workload, underpinning variational quantum algorithms and Trotterized time evolution.",
-    "summaryLong": "What it does: Hamiltonian simulation is a core quantum workload, underpinning variational quantum algorithms and Trotterized time evolution.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices. It is relevant to simulating quantum many-body systems.",
-    "importanceScore": 2,
-    "importanceReasons": [
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11569v1",
-    "title": "Improved quantum sampling methods for molecular simulations",
-    "abstract": "Quantum-selected configuration interaction (QSCI) methods use a quantum computer to identify dominant electronic configurations in the molecular ground state, while a classical computer diagonalizes the Hamiltonian within the reduced subspace spanned by those configurations. Sample-based quantum diagonalization (SQD), a leading QSCI approach, uses iterative classical post-processing to correct noisy quantum measurement to ensure that the corresponding configurations remain physically sensible. In this work, we show that SQD performance can be strongly influenced by uncontrolled growth of the classical diagonalization subspace. When classical resources are not explicitly constrained, classical uniform random sampling can reproduce SQD benchmarks as noise increases the diversity of sampled configurations. We show any fair benchmarking protocol of SQD must explicitly control diagonalization size over unique samples. We then address the problem of efficiently discovering physically relevant, energy-lowering configurations by introducing a measurement protocol based on non-orthogonal configuration interaction (NOCI). By distributing measurements across orbital bases optimized with respect to the molecular Hamiltonian, we obtain improved sample efficiency relative to measurements performed solely in the Hartree--Fock basis. Importantly, these improvements persist even under fixed classical resource budgets, demonstrating that the resulting configurations are of higher quality rather than being more numerous. Under our proposed benchmarking procedure, we establish measurement-basis engineering as a promising route to improving quantum sampling methods for electronic structure.",
-    "authors": [
-      "Connor van Rossum",
-      "Jeffery Cohn",
-      "Sally Shrapnel",
-      "Riddhi Gupta"
-    ],
-    "publishedDate": "2026-08-12T02:27:06+00:00",
-    "updatedDate": "2026-08-12T02:27:06+00:00",
-    "arxivId": "2608.11569v1",
-    "url": "https://arxiv.org/abs/2608.11569v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11569v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "Benchmarking"
-    ],
-    "summaryShort": "Quantum-selected configuration interaction (QSCI) methods use a quantum computer to identify dominant electronic configurations in the molecular ground state, while a classical computer diagonalizes the Hamiltonian withi...",
-    "summaryLong": "What it does: Quantum-selected configuration interaction (QSCI) methods use a quantum computer to identify dominant electronic configurations in the molecular ground state, while a classical computer diagonalizes the Hamiltonian withi...\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
-    "importanceScore": 2,
-    "importanceReasons": [
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11563v1",
-    "title": "Efficient Quantum Modular Reduction: Crandall reduction and its Fault-tolerant resource analysis",
-    "abstract": "Modular arithmetic is central to quantum algorithms for cryptographic problems, including Shor's algorithm and Grover-based cryptanalysis, with modular reduction contributing substantially to circuit cost. Pseudo-Mersenne moduli $q=2^n-c$ allow classical Crandall reduction to replace division with folding and constant arithmetic, providing a structural opportunity for more efficient quantum modular reduction than Barrett reduction. We translate this advantage into a reversible quantum setting by deriving explicit folding and normalization conditions for $2n$-bit inputs. To the best of our knowledge, this constitutes the first exact reversible quantum circuit formulation of Crandall reduction. Based on this formulation, we develop two variants: Crandall reduction-1 is designed to minimize execution cost through one-step normalization, whereas Crandall reduction-2 uses two-step normalization to support a wider range of $c$ with limited overhead. Logical resource estimates show that both variants require fewer qubits and lower T-count and T-depth than optimized folding Barrett reduction. At $n=10$, Crandall reduction-1 reduces both T-count and T-depth by approximately 46.9% relative to optimized folding Barrett reduction. Surface-code analysis further shows that, at $n=20$ under the Sparse Blossom decoder, the estimated runtimes of the two variants are 30.05 ms and 35.39 ms, respectively, compared with 53.77 ms for optimized folding Barrett reduction. These results demonstrate the practical value of exploiting modulus-specific arithmetic structure in fault-tolerant quantum circuit design.",
-    "authors": [
-      "Changyeol Lee",
-      "Sungyeon Kook",
-      "Wooyeong Song",
-      "Kwangil Bae",
-      "Wonhyuk Lee",
-      "IlKwon Sohn"
-    ],
-    "publishedDate": "2026-08-12T02:07:24+00:00",
-    "updatedDate": "2026-08-12T02:07:24+00:00",
-    "arxivId": "2608.11563v1",
-    "url": "https://arxiv.org/abs/2608.11563v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11563v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "Fault-Tolerant Quantum Computing",
-      "Quantum Algorithms"
-    ],
-    "summaryShort": "Modular arithmetic is central to quantum algorithms for cryptographic problems, including Shor's algorithm and Grover-based cryptanalysis, with modular reduction contributing substantially to circuit cost.",
-    "summaryLong": "What it does: Modular arithmetic is central to quantum algorithms for cryptographic problems, including Shor's algorithm and Grover-based cryptanalysis, with modular reduction contributing substantially to circuit cost.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices.",
-    "importanceScore": 3,
-    "importanceReasons": [
-      "Related to quantum error correction or fault-tolerant quantum computing.",
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11516v1",
-    "title": "Trapping Sets of Detector Error Models",
-    "abstract": "Message-passing decoders are among the most promising candidates for scalable quantum error correction, yet their behavior in the low-error-rate regime remains poorly understood under realistic circuit-level noise. In this work, we introduce a systematic framework for identifying the graph structures that govern decoder failures and for using them to predict the resulting error floor. We apply exhaustive trapping-set enumeration directly to the detector error model of a bivariate bicycle code and test all low-weight fault configurations supported on the resulting structures. This converts the analysis of extremely rare logical failures into a finite structural search, avoiding the prohibitive cost of direct Monte Carlo simulation. We evaluate the framework on three iterative decoders with substantially different architectures and decoding heuristics. Remarkably, for \\texttt{RelayBP}, the resulting prediction accurately reproduces the simulated error floor; for the others, it remains within the same order of magnitude. Despite their differences, leafless elementary trapping sets capture a substantial part of the low-weight error-floor contribution for all three decoders. Moreover, each decoder admits failures caused by fault configurations well below the correction capability implied by the circuit-level distance, revealing a substantial gap between code distance and practical iterative-decoding performance. These results establish trapping-set analysis as a practical framework for predicting error floors, exposing the structural weaknesses of iterative decoders, and guiding the joint design of decoding algorithms.",
-    "authors": [
-      "Michele Pacenti",
-      "Nithin Raveendran",
-      "Bane Vasic"
-    ],
-    "publishedDate": "2026-08-12T00:11:17+00:00",
-    "updatedDate": "2026-08-12T00:11:17+00:00",
-    "arxivId": "2608.11516v1",
-    "url": "https://arxiv.org/abs/2608.11516v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11516v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "Quantum Error Correction"
-    ],
-    "summaryShort": "Message-passing decoders are among the most promising candidates for scalable quantum error correction, yet their behavior in the low-error-rate regime remains poorly understood under realistic circuit-level noise.",
-    "summaryLong": "What it does: Message-passing decoders are among the most promising candidates for scalable quantum error correction, yet their behavior in the low-error-rate regime remains poorly understood under realistic circuit-level noise.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to reliable logical qubits and improved quantum reliability.",
-    "importanceScore": 3,
-    "importanceReasons": [
-      "Related to quantum error correction or fault-tolerant quantum computing.",
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11396v1",
-    "title": "Generative Learning for Quantum Measurement Design",
-    "abstract": "Extracting quantum information from a quantum state is a fundamental task of quantum computation, often requiring the estimation of many non-commuting observables under a finite measurement budget. For both near-term and early fault-tolerant settings, the measurement protocol must balance statistical efficiency against implementation resources such as circuit depth, connectivity, and entangling-gate count. Many existing strategies focus on two extremes: hardware-friendly product measurements with high sampling cost, and fully commuting measurements with deep circuits. Here we recast resource-constrained measurement design as a generative learning problem. We introduce FlowMeas, which uses a generative flow network to directly sample finite ensembles of shallow Clifford measurement circuits subject to a prescribed shot budget and hardware constraints. At zero entangling depth, FlowMeas learns qubit-wise commuting measurement schedules and already matches or improves leading product-measurement methods on nearly all molecular benchmarks. Allowing one or two entangling gate layers yields further reductions in energy estimation error of up to $27\\%$ relative to the strongest state-independent product-measurement baseline. The learned policy can also be reused across related Hamiltonians, substantially accelerating retraining along a molecular potential-energy surface. We further obtain results for molecular Hamiltonians with up to 20 qubits and apply the framework to a compactly encoded 54-qubit interacting fermionic model, extending the demonstrated scale beyond prior molecular benchmarks. These results establish generative learning as a flexible and unified framework for quantum measurement design under practical resource constraints.",
-    "authors": [
-      "Jun Dai",
-      "Olivier Nahman-Lévesque",
-      "Guillaume Rabusseau",
-      "Hong-Ye Hu",
-      "Cunlu Zhou"
-    ],
-    "publishedDate": "2026-08-11T20:02:41+00:00",
-    "updatedDate": "2026-08-11T20:02:41+00:00",
-    "arxivId": "2608.11396v1",
-    "url": "https://arxiv.org/abs/2608.11396v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11396v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "Fault-Tolerant Quantum Computing"
-    ],
-    "summaryShort": "Extracting quantum information from a quantum state is a fundamental task of quantum computation, often requiring the estimation of many non-commuting observables under a finite measurement budget.",
-    "summaryLong": "What it does: Extracting quantum information from a quantum state is a fundamental task of quantum computation, often requiring the estimation of many non-commuting observables under a finite measurement budget.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
-    "importanceScore": 3,
-    "importanceReasons": [
-      "Related to quantum error correction or fault-tolerant quantum computing.",
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11385v1",
-    "title": "Evaluating QAOA expectation values can be as hard as counting optimal solutions",
-    "abstract": "Evaluating expectation values is a critical task for variational quantum eigensolvers, and for parameterized quantum circuits and other quantum algorithms more generally. We consider the well-studied case of the Quantum Approximate Optimization Algorithm (QAOA) for the MaxCut problem. Recent work of Wang et al. [arXiv:2511.20212] showed this task to be NP-hard in general for any QAOA depth $p\\geq 2$, complementing past results showing efficiently computable formulas for $p=1$ with arbitrary problem graphs. We sharpen this dichotomy showing that for $p\\geq 2$ exact or exponentially precise cost expectation value evaluation is #P-hard under deterministic polynomial-time Turing reductions. Hardness at $p\\geq 2$ is shown to remain even for evaluating single pairwise correlators $\\langle Z\\otimes Z\\rangle $, as well as for highly restricted sets of algorithm parameters. Our proof refines the NP-hardness construction of Wang et al. that recovers the maximum cut value from the largest exponent of a QAOA Laurent polynomial, utilizing a distinct and simpler construction that extracts a value proportional to the total number of maximum cuts, in addition to the optimal cut value. Thus we show that the QAOA expectation value hardness transition from $p=1$ to $p=2$ is not only from tractability to optimization hardness, but to that of counting optimal solutions. As an application we show our results imply analogous hardness results for computing gradients and Hessians of QAOA circuits.",
-    "authors": [
-      "Stuart Hadfield"
-    ],
-    "publishedDate": "2026-08-11T19:47:04+00:00",
-    "updatedDate": "2026-08-11T19:47:04+00:00",
-    "arxivId": "2608.11385v1",
-    "url": "https://arxiv.org/abs/2608.11385v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11385v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "Quantum Algorithms"
-    ],
-    "summaryShort": "Evaluating expectation values is a critical task for variational quantum eigensolvers, and for parameterized quantum circuits and other quantum algorithms more generally.",
-    "summaryLong": "What it does: Evaluating expectation values is a critical task for variational quantum eigensolvers, and for parameterized quantum circuits and other quantum algorithms more generally.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms. It is relevant to computational applications of quantum devices.",
-    "importanceScore": 1,
-    "importanceReasons": [
-      "No strong importance signals detected by the rule-based scorer."
-    ]
-  },
-  {
-    "id": "2608.11369v1",
-    "title": "Holonomic quantum gates via continuous measurement in bosonic codes: GKP and cat states",
-    "abstract": "We apply continuous measurement-based holonomic quantum computation (CMHQC) to bosonic quantum error-correcting codes and develop explicit protocols for both four-component cat codes and Gottesman-Kitaev-Preskill (GKP) codes. In this framework, a continuously monitored time-dependent codespace undergoes a closed trajectory on the Grassmannian manifold while Zeno confinement suppresses departures from the instantaneous code subspace. For cat codes, we construct a family of squeezed-cat trajectories whose projected Wilczek-Zee connection generates arbitrary logical Z rotations, including non-Clifford T-gates. For GKP codes, we introduce a translated-lattice trajectory that realizes the logical GKP T gate through a purely geometric holonomy. We derive the corresponding time-dependent projectors, analytically evaluate the projected connections, and show that the resulting holonomies reproduce the desired logical operations without Hamiltonian control. Furthermore, we analyze the error-correcting capabilities of the instantaneous codespaces by establishing dressed Knill-Laflamme conditions for the relevant bosonic error models and derive analytical estimates for leakage induced by finite-strength continuous measurements. Our results provide a concrete realization of measurement-induced holonomic control in experimentally relevant bosonic platforms and establish a full fault-tolerant logical gate implementation.",
-    "authors": [
-      "Juan Garcia-Nila",
-      "Anirudh Lanka",
-      "Todd A. Brun"
-    ],
-    "publishedDate": "2026-08-11T19:26:09+00:00",
-    "updatedDate": "2026-08-11T19:26:09+00:00",
-    "arxivId": "2608.11369v1",
-    "url": "https://arxiv.org/abs/2608.11369v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11369v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "Fault-Tolerant Quantum Computing"
-    ],
-    "summaryShort": "We apply continuous measurement-based holonomic quantum computation (CMHQC) to bosonic quantum error-correcting codes and develop explicit protocols for both four-component cat codes and Gottesman-Kitaev-Preskill (GKP) c...",
-    "summaryLong": "What it does: We apply continuous measurement-based holonomic quantum computation (CMHQC) to bosonic quantum error-correcting codes and develop explicit protocols for both four-component cat codes and Gottesman-Kitaev-Preskill (GKP) c...\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
-    "importanceScore": 3,
-    "importanceReasons": [
-      "Related to quantum error correction or fault-tolerant quantum computing.",
-      "Mentions logical qubits, surface codes, or fault tolerance."
-    ]
-  },
-  {
-    "id": "2608.11316v1",
-    "title": "Particle Production, Equilibration, and Quantum Recurrences from Classical Fields",
-    "abstract": "We investigate particle production from classical fields, a phenomenon central to the pre-equilibrium dynamics of relativistic heavy-ion collisions and the reheating epoch of the early Universe. Using lattice $λφ^4$ theory as a proof of principle, we show that this problem is naturally amenable to quantum computation, providing a first-principles framework for nonequilibrium quantum-field dynamics beyond existing approximations. We perform simulations on small spatial lattices, exhausting our available classical computational resources while maintaining a direct mapping to future quantum-computing implementations. We find that particle production is accompanied by equilibration of observables, including the field expectation value, occupation-number distribution, and pressure. The observed equilibration persists for timescales several times longer than the initial equilibration time before the observables resume oscillatory behavior associated with quantum Poincaré recurrences. Our results establish a route toward first-principles studies of equilibration in nonequilibrium quantum field theory and provide insight into the search for the smallest possible locally equilibrated quark-gluon systems at hadron colliders.",
-    "authors": [
-      "Iván Cuntín",
-      "Wenyang Qian",
-      "Bin Wu"
-    ],
-    "publishedDate": "2026-08-11T18:06:02+00:00",
-    "updatedDate": "2026-08-11T18:06:02+00:00",
-    "arxivId": "2608.11316v1",
-    "url": "https://arxiv.org/abs/2608.11316v1",
-    "pdfUrl": "https://arxiv.org/pdf/2608.11316v1",
-    "source": "arXiv",
-    "platformTags": [
-      "Trapped Ions"
-    ],
-    "themeTags": [
-      "General Theory"
-    ],
-    "summaryShort": "We investigate particle production from classical fields, a phenomenon central to the pre-equilibrium dynamics of relativistic heavy-ion collisions and the reheating epoch of the early Universe.",
-    "summaryLong": "What it does: We investigate particle production from classical fields, a phenomenon central to the pre-equilibrium dynamics of relativistic heavy-ion collisions and the reheating epoch of the early Universe.\n\nWhy it matters: The work is relevant to high-control trapped-ion quantum computing platforms.",
     "importanceScore": 1,
     "importanceReasons": [
       "No strong importance signals detected by the rule-based scorer."
